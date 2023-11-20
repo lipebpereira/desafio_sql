@@ -6,7 +6,7 @@ Aqui embaixo você pode conferir como ficou o schema design do banco de dados.
 
 ![alt text](https://github.com/lipebpereira/desafio_sql/blob/main/tables.png?raw=true)
 
-*Para realizar a criação do banco de dados é necessário rodar o script "criacao.sql" que se encontra no repositório!*
+**Para realizar a criação do banco de dados é necessário rodar o script "create_schema.sql" que se encontra no repositório!**
 
 ## Respostas das perguntas
 Além disso, também é possível ver as respostas no arquivo .sql que se encontra no repositório
