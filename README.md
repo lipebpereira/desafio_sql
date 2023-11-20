@@ -2,14 +2,18 @@
 
 Olá, meu nome é Felipe Barbosa Pereira e este é meu desafio SQL.
 
+## Respostas das perguntas
+Também é possível ver as respostas nos arquivos .sql que se encontram dentro da pasta "respostas" no repositório
+
+---
+
 Aqui embaixo você pode conferir como ficou o schema design do banco de dados.
 
 ![alt text](https://github.com/lipebpereira/desafio_sql/blob/main/tables.png?raw=true)
 
-**Para realizar a criação do banco de dados é necessário rodar o script "create_schema.sql" que se encontra no repositório!**
+**Para realizar a criação do banco de dados é necessário executar o script "create_schema.sql" que se encontra no repositório!**
+**Além disso é necessário inserir os dados fornecidos neste banco de dados criado com o arquivo acima**
 
-## Respostas das perguntas
-Além disso, também é possível ver as respostas no arquivo .sql que se encontra no repositório
 
 #### Q1: Valor total das vendas e dos fretes por produto e ordem de venda
 
@@ -126,7 +130,7 @@ Aqui estou selecionando algumas informaçãoes sobre a venda de um produto a par
 
 #### Q7: Média de produtos vendidos
 ``` 
-SELECT SUM(cupom.Quantidade)/COUNT(venda.CupomID) 
+SELECT SUM(cupom.Quantidade)/COUNT(venda.CupomID) media_produtos_vendidos
 FROM cupom JOIN venda ON cupom.CupomID = venda.CupomID
 ```
 Aqui estou selecionando algumas informaçãoes sobre as vendas de um produto a partir da tabela cupom. Após isso estou pegando a soma de produtos vendidos e dividindo pela quantidade de vendas, para assim ter a média de produtos vendidos.
